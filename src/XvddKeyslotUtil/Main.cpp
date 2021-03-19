@@ -115,9 +115,13 @@ int main(int argc, char* argv[])
     //XvddGuidSlotAddress = static_cast<char*>(XvddBaseAddress) + 0x71144;
 
     // 10.0.19041.5411
-    XvddKeyslotAddress = static_cast<char*>(XvddBaseAddress) + 0x72580;
-    XvddGuidSlotAddress = static_cast<char*>(XvddBaseAddress) + 0x71194;
+    //XvddKeyslotAddress = static_cast<char*>(XvddBaseAddress) + 0x72580;
+    //XvddGuidSlotAddress = static_cast<char*>(XvddBaseAddress) + 0x71194;
 
+    // 10.0.19041.5035
+	XvddKeyslotAddress = static_cast<char*>(XvddBaseAddress) + 0x73580;
+    XvddGuidSlotAddress = static_cast<char*>(XvddBaseAddress) + 0x72194;
+	
     std::cout << "[+] Fetching GUID slot table..." << std::endl;
 
     // Fetch GUID slot table
